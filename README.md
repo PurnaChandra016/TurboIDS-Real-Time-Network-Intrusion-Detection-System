@@ -195,6 +195,3 @@ TurboIDS/
     ├── KDDTrain+.txt
     ├── KDDTest+.txt
     └── test_upload.csv
-**Institution:** SRM Institute of Science and Technology, Kattankulathur
-**Guide:** Ms. Asis Marceline V
-**Year:** 2026
