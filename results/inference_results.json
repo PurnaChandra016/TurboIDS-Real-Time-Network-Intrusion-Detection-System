@@ -1,0 +1,30 @@
+{
+  "pytorch_gpu": {
+    "latency_ms": 1.1968098999996073,
+    "throughput": 835.5545855697952
+  },
+  "onnx_cpu": {
+    "latency_ms": 0.05663230000027397,
+    "throughput": 17657.767740232382
+  },
+  "onnx_cuda": {
+    "latency_ms": 0.6020214999998643,
+    "throughput": 1661.070244169395
+  },
+  "tensorrt_fp32": {
+    "latency_ms": 0.2686076999998477,
+    "throughput": 3722.901465596731
+  },
+  "tensorrt_fp16": {
+    "latency_ms": 0.304670200000146,
+    "throughput": 3282.23764582004
+  },
+  "triton_fp32": {
+    "latency_ms": 2.6664591999997356,
+    "throughput": 375.0291772700288
+  },
+  "triton_fp16": {
+    "latency_ms": 2.788342499999999,
+    "throughput": 358.63599970233224
+  }
+}

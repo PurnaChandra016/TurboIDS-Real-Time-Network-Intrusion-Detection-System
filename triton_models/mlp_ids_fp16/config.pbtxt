@@ -1,0 +1,31 @@
+name: "mlp_ids_fp16"
+backend: "tensorrt"
+max_batch_size: 128
+
+input [
+  {
+    name: "input"
+    data_type: TYPE_FP32
+    dims: [ 41 ]
+  }
+]
+
+output [
+  {
+    name: "output"
+    data_type: TYPE_FP32
+    dims: [ 1 ]
+  }
+]
+
+dynamic_batching {
+  preferred_batch_size: [ 1, 8, 16, 32, 64 ]
+  max_queue_delay_microseconds: 100
+}
+
+instance_group [
+  {
+    kind: KIND_GPU
+    count: 1
+  }
+]
